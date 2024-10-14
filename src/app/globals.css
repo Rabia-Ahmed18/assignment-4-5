@@ -1,0 +1,144 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+.mainContainer {
+  background-color:rgb(238, 198, 67);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color:black;
+  /* display:none; */
+}
+.logo {
+  
+  font-family:Londrina Sketch, sans-serif;
+  color:rgb(238, 198, 67);
+  font-weight:700;
+  font-style:normal;
+  margin-right: 400px;
+  text-shadow: 2px 2px 4px grey;
+}
+
+.logo:hover{
+  color: white
+}
+.header-btn {
+ width:100%;
+  display: flex;
+  padding: 5px;
+  justify-content:center;
+  align-items:center;
+  gap: 40px;
+  font-size: 18px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.header-btn li:hover {
+  color:rgb(238, 198, 67);
+ }
+  
+
+.parentContainer {
+  width: 100%;
+  height: 700%;
+  padding: 70px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.childContainer {
+  width: 300px;
+  height: 370px;
+  background-color:  rgb(241, 213, 247);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.childContainer:hover {
+  transition-duration: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(228, 226, 159);
+  border-radius: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  background-color: rgb(238, 240, 242);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height:37%;
+}
+
+
+.description {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  padding:3px;
+  font-size:18px;
+  text-align:left;
+  
+}
+
+
+
+
+.footer {
+  text-align: center;
+  color:rgb(251, 251, 251);
+  background-color:rgb(0, 0, 0);
+ 
+}
+
+
+
+.footer-txt:hover {
+  color: rgb(8, 8, 8);
+
+  cursor: pointer;
+
+}
+
+  @media only screen and (max-width: 599px ){
+    .childContainer {
+      width: 90%;
+    }
+  
+  }
+
+  @media only screen and (max-width: 450px ){
+    .childContainer {
+      width: 120%;
+    }
+  
+  }
+
+  @media only screen and (max-width: 940px ){
+    .header-btn {
+      width:60%;
+    }
+  
+  }
+  
